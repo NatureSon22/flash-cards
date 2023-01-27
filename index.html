@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Flash Cards</title>
+    </head>
+    <body>
+        <div>
+            <header class="navigation">
+                <h2 id="title">Flash Cards</h2>
+                <div id="btn-options">
+                    <button onclick="showCreatorBox()">New</button>
+                    <button onclick="delFlashcards()">Delete All</button>
+                </div>    
+            </header>   
+
+            <div class="creator-box">
+                <div>
+                    <h2>Create Flash Cards</h2>
+                    <input type="text" id="question" placeholder="Question">
+                    <input type="text" id="answer" placeholder="Answer">
+                    <div class="btn-create">
+                        <button onclick="createFlashCard()">Save</button>
+                        <button onclick="hide()">Hide</button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="flashcards">
+            </div>
+        </div> 
+        <script src="index.js"></script>   
+    </body>
+</html>
